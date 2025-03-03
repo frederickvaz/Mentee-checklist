@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentor-Mentee Programme, Goa Medical College</title>
+    
+    <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
+
+    <!-- Register Service Worker for Offline Support -->
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js')
@@ -12,6 +16,7 @@
                 .catch(error => console.log("Service Worker Registration Failed:", error));
         }
     </script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,7 +37,7 @@
             margin-top: 5px;
         }
         .developer-label {
-            font-size: 14px;  /* Reduced font size for better mobile fit */
+            font-size: 14px;  /* Smaller font for better mobile fit */
             font-weight: normal;
             margin-top: 10px;
             line-height: 1.4;
@@ -118,4 +123,16 @@
     </p>
 
     <div class="image-container">
-        <img src="mentoring-coaching-two-stick
+        <img src="mentoring-coaching-two-stick-figures-flying-blue-arrow-82184266.webp" alt="Mentoring Image">
+    </div>
+
+    <form id="checklistForm">
+        <div id="questions"></div>
+        <button type="button" onclick="evaluateChecklist()">Evaluate Checklist</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
