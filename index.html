@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentor-Mentee Programme, Goa Medical College</title>
-    
-    <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
-
-    <!-- Register Service Worker for Offline Support -->
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js')
@@ -16,7 +12,6 @@
                 .catch(error => console.log("Service Worker Registration Failed:", error));
         }
     </script>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,10 +32,9 @@
             margin-top: 5px;
         }
         .developer-label {
-            font-size: 14px;  /* Smaller font for better mobile fit */
-            font-weight: normal;
+            font-size: 18px;
+            font-weight: bold;
             margin-top: 10px;
-            line-height: 1.4;
         }
         .image-container img {
             width: 100%;
@@ -117,7 +111,7 @@
     <h2>Mentee Checklist</h2>
     
     <p class="developer-label">
-        <strong>Mentee Checklist Developed by:</strong> Dept. of Psychiatry, Goa Medical College. <br>
+        <strong>Mentee Checklist Developed by:</strong> Department of Psychiatry, Goa Medical College. <br>
         <strong>App Developed by:</strong> Dr. Frederick Vaz, Community Medicine, Goa Medical College. <br>
         <strong>Copyright and Ownership:</strong> Student Mentoring Cell, Goa Medical College.
     </p>
